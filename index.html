@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>mizukmb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+      <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <link rel="shortcut icon" href="./images/favicon.ico">
+      <script type="application/ld+json">
+{
+"@context" : "http://schema.org",
+"@type" : "Person",
+"Name" : "mizukmb",
+"url" : "http://github.com/mizukmb"
+"image" : "http://1.gravatar.com/avatar/a622327832207d7a36b23b07f16c9c85"
+}
+      </script>
+      <script src="./bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+      <link rel="import" href="element.html">
+
+      <style is="custom-style">
+:root {
+  --paper-toolbar-background: #00bcd4;
+}
+      </style>
+      <link rel="stylesheet" type="text/css" href="./css/index.css">
+  </head>
+
+  <body class="fullbleed">
+    <template is="dom-bind">
+
+    <paper-header-panel mode="waterfall-tall">
+    <paper-toolbar class="tall toolbar">
+    <div title>mizukmb について</div>
+    <paper-tabs selected="{{selected}}" noink role="tablist" tabindex="0" class="bottom self-end tabs">
+    <paper-tab role="tab" aria-disabled="false" tabindex="0" area-selected="true">PROFILE</paper-tab>
+    <paper-tab role="tab" aria-disabled="false" tabindex="0" area-selected="true">SKILL</paper-tab>
+    <paper-tab role="tab" aria-disabled="false" tabindex="0" area-selected="true">LIKES</paper-tab>
+    <paper-tab role="tab" aria-disabled="false" tabindex="0" area-selected="true">CONTACT</paper-tab>
+    </paper-tabs>
+    </paper-toolbar>
+
+    <iron-pages selected="[[selected]]" class="contents">
+    <div>
+      <paper-material elevation="2" class="profile">
+      <!-- <div class="profile"> -->
+      <p><iron-image class="sized" sizing="contain" src="./images/mizukmb.png"></iron-image></p>
+      <table border="0">
+        <tr>
+          <td>名前</td> 
+          <td>mizukmb(MiZU)</td> 
+        </tr> 
+        <tr>
+          <td>出身</td> 
+          <td>青森県</td> 
+        </tr>
+        <tr>
+          <td>誕生日</td>
+          <td>6月23日</td>
+        </tr>
+      </table>
+      <h3>リンク</h3>
+      <table>
+        <tr>
+          <td><a href="https://github.com/mizukmb" target="_blank">GitHub</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://twitter.com/mizukmb" target="_blank">Twitter</a></td>
+        </tr>
+        <tr>
+          <td><a href="http://qiita.com/mizukmb" target="_blank">Qiita</a></td>
+        </tr>
+        <tr>
+          <td><a href="http://mizukmb.hatenablog.com" target="_blank">（旧）はてなブログ</a></td>
+        </tr>
+        <tr>
+          <td><a href="http://blog.mizukmb.net" target="_blank">ブログ</a></td>
+        </tr>
+        <tr>
+          <td><a href="http://mizukmb.tumblr.com" target="_blank">Tumblr</a></td>
+        </tr>
+        <tr>
+          <td><a href="http://www.amazon.co.jp/registry/wishlist/3SSYTRNV636E6/ref=cm_sw_r_tw_ws_YyIOvb156WMSK " target="_blank">Amazonほしい物リスト</a></td>
+        </tr>
+      </table>
+      <!-- </div> -->
+      </paper-material>
+    </div>
+
+    <div>
+      <paper-material elevation="2" class="profile">
+      <h2>プログラミング</h2>
+      <ul>
+        <li>C</li>
+        <li>Java</li>
+        <li>Ruby</li>
+        <li>Python</li>
+        <li>Go</li>
+        <li>Elixir</li>
+      </ul>
+      </paper-material>
+    </div>
+
+    <div>
+      <paper-material elevation="2" class="profile">
+      <h2>THE iDOL M@STER</h2>
+      <p>アニメ(ゼノグラシアじゃない)をきっかけにハマりました。特に楽曲が好きでiPodにはたくさんの楽曲が入っています（1,000曲超）。何度かライブにも参加しています。響担当P
+      </p>
+      </paper-material>
+
+      <paper-material elevation="2" class="profile">
+      <h2>アニメ</h2>
+      <p>昔から好きでよく観ます。最近は深夜アニメが多めです。</p>
+      <p><a href="http://shirobako-anime.com" target="_blank">SHIROBAKO</a>面白いのでみんな見ましょう</p>
+      </paper-material>
+
+      <paper-material elevation="2" class="profile">
+      <h2>ゲーム</h2>
+      <p>アクション・FPS・音ゲーが好きです。ホラゲーはあまり好きではありません。</p>
+      <h3>Splatoon</h3>
+      <p>僕がファミ通クロスレビュアーだったら間違いなく10点つける。そのくらい面白いです。</p>
+      <p>NNIDは <b>mizu0623</b> です。興味のあるかたは是非フレンド登録をお願いします。</p>
+      </paper-material>
+
+      <paper-material elevation="2" class="profile">
+      <h2>最近読んだ本</h2> 
+      <h3><a href="http://www.amazon.co.jp/Team-Geek-―Googleのギークたちはいかにしてチームを作るのか-Brian-Fitzpatrick/dp/4873116309/ref=sr_1_1?ie=UTF8" target="_blank">Team Geek ―Googleのギークたちはいかにしてチームを作るのか</a></h3>
+      良かったです
+      <h3><a href="http://www.amazon.co.jp/リーダブルコード-―より良いコードを書くためのシンプルで実践的なテクニック-Theory-practice-Boswell/dp/4873115655/ref=sr_1_1?s=books&ie=UTF8" target="_blank">リーダブルコード</a></h3>
+      定番です
+      <h3><a href="http://www.amazon.co.jp/人工知能は人間を超えるか-ディープラーニングの先にあるもの-角川EPUB選書-松尾-豊/dp/4040800206/ref=tmm_hrd_title_0" target="_blank">人工知能は人間を超えるか-ディープラーニングの先にあるもの</a></h3>
+      これまでの人工知能分野の発達、そしてこれからの可能性について分かりやすく書かれていました。
+      </paper-material>
+    </div>
+
+    <div>
+      <paper-material elevation="2" class="profile">
+      <h3>コンタクト</h3>
+      <table>
+        <tr>
+          <td>Mail</td>
+          <td>mizukmb6あっとgmail.com</td>
+        </tr>
+        <tr>
+          <td>Twitter</td>
+          <td><a href="https://twitter.com/mizukmb">mizukmb</a></td>
+        </tr>
+      </table>
+      </paper-material>
+    </div>
+
+    </iron-pages>
+    </paper-header-panel>
+    </template>
+
+    <script>
+var scope = document.querySelector('template[is="dom-bind"]');
+scope.selected = 0;
+    </script>
+
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-52696334-4', 'auto');
+ga('send', 'pageview');
+    </script>
+  </body>
+</html>
