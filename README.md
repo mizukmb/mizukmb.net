@@ -1,1 +1,1 @@
-# mizukmb.github.io
+https:mizukmb.net
